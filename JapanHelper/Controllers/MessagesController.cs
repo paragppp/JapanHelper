@@ -21,6 +21,7 @@ namespace JapanHelper
         {
             if (activity.Type == ActivityTypes.Message)
             {
+
                 ConnectorClient connector = new ConnectorClient(new Uri(activity.ServiceUrl));
                 // calculate something for us to return
                 int length = (activity.Text ?? string.Empty).Length;
